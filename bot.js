@@ -4,6 +4,7 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
     client.user.setActivity('YouTube', { type: 'WATCHING' });
+    client.user.setStatus("dnd")
 });
 
 client.on('message', message => {
